@@ -1,0 +1,260 @@
+/*reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+@import "utilities/listas";
+@import "utilities/producto";
+@import "utilities/quienes-somos";
+@import "utilities/catalogos";
+@import "utilities/contacto";
+
+
+
+/* estilos de header */
+header {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 34vh;
+      width: auto;
+    }
+  }
+}
+
+/* estilos de main */
+main {
+  .img__carousel {
+    height: 400px;
+    width: 100vw;
+  }
+
+  .intro {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: solid;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 1.20rem;
+  }
+
+  .fondo {
+    background-image: url(../img/fondocontacto.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 2rem;
+
+    .subtitulo {
+      margin-top: 50px;
+      background-color: $color-principal;
+      text-align: center;
+      color: $color-secundario;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.17rem;
+    }
+
+    .destacados {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+      gap: 2rem;
+      margin-top: 5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-bottom: 5rem;
+
+      .caja {
+        @extend %flex;
+        .caja__fija {
+          background: $color-secundario;
+          border: solid 3px nth($colores,1);
+          width: 250px;
+
+          .caja__title {
+            font-size: 1.5rem;
+            font-family: 'Edu VIC WA NT Beginner', cursive;
+            font-family: 'IBM Plex Mono', monospace;
+            text-decoration: solid;
+          }
+          button {
+            text-decoration-color: nth($colores,2);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            background-color: $color-principal;
+            border: 1px solid color nth($colores,1);
+            :hover{
+              color: nth($colores,1);
+              background: $color-secundario;
+              box-shadow: 10px 5px 5px nth($colores,3);
+            }
+            a{
+              color: nth($colores,2);
+              text-decoration: none;
+              
+            }
+          }
+
+        }
+      }
+
+
+    }
+  }
+
+}
+
+/* estilos de footer */
+footer {
+  .titulord {
+    background-color: $color-principal;
+    text-align: center;
+    color: $color-secundario;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.17rem;
+  }
+
+  .redes {
+    @extend %flex;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      list-style: none;
+
+      li {
+        margin: 1rem;
+
+        img {
+          @include medidas(50px, 50px);
+        }
+      }
+
+    }
+
+  }
+
+  .wajapen {
+    img {
+      height: 45px;
+      width: 45px;
+      bottom: 9rem;
+      right: 1rem;
+      box-sizing: border-box;
+      position: fixed;
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+}
+
+
+/* mediaquery max 767px */
+@media screen and (max-width: 767px) {
+  main .fondo .destacados {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+}
+
+/* Mediaquery min768p */
+@media (min-width: 768px) {
+  main .fondo .destacados {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header .header__img {
+    height: 45vh;
+    width: auto;
+  }
+
+  .navbar__menu--message {
+    display: none;
+  }
+
+  .navbar-expand-md .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column-reverse;
+  }
+
+  .img__carousel {
+    height: 580px;
+    width: 100vw;
+  }
+
+  .productos__container {
+    display: flex;
+    flex-direction: row;
+  
+
+  }
+
+  .catalogo__container img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/*Mediaquery max768p */
+
+@media (max-width: 768px) {
+  .quienes__container .quienes__item .quienes__texto {
+    width: 100%;
+
+  }
+
+  .quienes__container .quienes__item .quienes__img {
+    width: 100%;
+
+  }
+}
+
+/* Mediaquery 1024p */
+
+@media screen and (min-width: 1024px) {
+
+  main .fondo .destacados {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  header .header__img {
+    height: 50vh;
+    width: auto;
+  }
+
+  main .fondo .catalago {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+
+  }
+
+}

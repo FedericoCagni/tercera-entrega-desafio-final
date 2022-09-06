@@ -1,0 +1,44 @@
+/* estilos main productos*/
+.productos__container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .productos__sidebar {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+        &--filter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: auto;
+            font-weight: bold;
+            margin: 20px;
+            padding: 15px;
+            width: 80%;
+            height: 3rem;
+            border: 3px solid #6666;
+
+            &:hover {
+                color: #ffff;
+                background: $color-principal;
+                box-shadow: 10px 5px 5px rgb(215, 165, 215);
+            }
+        }
+    }
+}
+
+.productos__pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .productos_nextpage {
+        padding: 10px;
+        border-radius: 7px;
+    }
+}

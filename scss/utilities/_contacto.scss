@@ -1,0 +1,31 @@
+.contact__form{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+
+    .contact__form--p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation-name: crece;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        margin-bottom: 2rem;
+        color: $color-principal;
+        font-size: 2rem;
+
+    }
+}
+@keyframes crece{
+    from{
+        transform: scale(0.5);
+
+    }
+
+    to{
+        transform: scale(1);
+    }
+
+}

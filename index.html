@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Home de Elisa Velas, Venta de velas aromaticas. Adquiere productos artesanales con ofertas exclusivas">
+    <meta name="keywords" content="Elisa, Velas, Productos, Oferta, Inicio, Aromatica, Artesanal,">
+    <link rel="shortcut icon" href="img/elisa-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
+    <!-- link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title> Elisa Velas </title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html"><img class="header__img" src="./img/elisa-logo.png" alt="logo de elisa velas"></a>
+        </div>
+        <!--  menu -->
+        <div class="container-fluid">
+            <div class=" justify-content-md-center">
+                <nav class="navbar navbar-expand-md">
+                    <span class="navbar__menu--message">Menu</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/producto.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/quienes-somos.html">Quienes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/catalogos.html">Catalogos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img__carousel" src="./img/inicio.jpg" class="d-block w-100"
+                        alt="vela prendida sobre una mesa con cuardernos y un ramo de rosas blancas">
+                </div>
+                <div class="carousel-item">
+                    <img class="img__carousel" src="./img/inicio2.jpg" class="d-block w-100"
+                        alt="varias velas pequeñas prendidas con fondo de flores y petalos">
+                </div>
+                <div class="carousel-item">
+                    <img class="img__carousel" src="./img/image2.jpg" class="d-block w-100"
+                        alt="varias velas de diferentes tamaños prendidas con unas toallas de fondo">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <p class="intro">
+            Bienvenidos a Elisa Velas, somos fabricantes de nuestras velas. Las cuales son realizadas con materia prima
+            100% vegetal.
+            Navega por nuestra web para encontrar los productos especiales que tenemos para vos.
+        </p>
+        <!-- productos card -->
+        <section class="fondo">
+            <h2 class="subtitulo"> Productos Destacados </h2>
+            <div class="destacados">
+                <div class="caja">
+                    <div class="caja__fija">
+                        <h2 class="caja__title"> Vela de soja </h2>
+                        <img src="img/image2.jpg" alt="Producto" width="200" height="250">
+                        <p> Fragancia Melon 250gr </p>
+                        <button><a href="pages/producto.html"> COMPRAR </a></button>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="caja__fija">
+                        <h3 class="caja__title"> Vela de soja </h3>
+                        <img src="img/producto1.jpg" alt="Producto" width="200" height="250">
+                        <p> Fragancia Mango 200gr </p>
+                        <button><a href="pages/producto.html"> COMPRAR </a></button>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="caja__fija">
+                        <h3 class="caja__title"> Vela de soja </h3>
+                        <img src="img/producto1.jpg" alt="Imagen vela" width="200" height="250">
+                        <p> Fragancia Jazmin 200gr </p>
+                        <button><a href="pages/producto.html"> COMPRAR </a></button>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="caja__fija">
+                        <h3 class="caja__title"> Vela de soja </h3>
+                        <img src="img/image2.jpg" alt="Imagen vela" width="200" height="250">
+                        <p> Fragancia Frutilla 250gr </p>
+                        <button><a href="pages/producto.html"> COMPRAR </a></button>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="caja__fija">
+                        <h4 class="caja__title"> Vela de soja </h4>
+                        <img src="img/producto2.jpg" alt="Imagen vela" width="200" height="250">
+                        <p> Fragancia Citrico 100gr </p>
+                        <button><a href="pages/producto.html"> COMPRAR </a></button>
+                    </div>
+                </div>
+                <div class="caja">
+                    <div class="caja__fija">
+                        <h4 class="caja__title"> Vela de soja </h4>
+                        <img src="img/producto2.jpg" alt="Imagen vela" width="200" height="250">
+                        <p> Fragancia Limon 100gr </p>
+                        <button><a href="pages/producto.html"> COMPRAR </a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4 class="titulord"> Nuestras Redes</h4>
+        <div class="redes">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img class="redes__img" src="./img/facebook.png"
+                            alt="link a facebook"> </a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img class="redes__img"
+                            src="./img/instagram.png" alt="link a instagram"> </a></li>
+                <li><a href="https://www.youtube.com/watch?v=XyZXHhYOiFw" target="_blank"><img class="redes__img"
+                            src="./img/youtube.png" alt="link a youtube"></a></li>
+            </ul>
+        </div>
+        <div class="wajapen">
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="wajapen__img" src="./img/whatsapp.png"
+                    alt="contacto"></a>
+        </div>
+        <p> IMPORTANTE: Todas las imágenes de los productos son sólo a modo ilustrativo y pueden diferir del artículo en
+            stock. Los precios indicados tienen IVA incluído y pueden sufrir variaciones sin previo aviso.
+            Disponibilidad sujeta a stock.</p>
+        <p> COPYRIGHT ELISA VELAS - 2022. TODOS LOS DERECHOS RESERVADOS. DEFENSA DE LAS Y LOS CONSUMIDORES. PARA
+            RECLAMOS <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">
+                Ingrese aqui </a></p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

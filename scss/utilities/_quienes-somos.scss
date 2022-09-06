@@ -1,0 +1,41 @@
+.quienes__container {
+    display: flex;
+    flex-direction: column;
+
+    .quienes__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .quienes__texto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            width: 50%;
+            padding: 2rem;
+
+            p {
+                font-size: 1.5rem;
+                padding-left: 20px;
+                margin-top: 5px;
+            }
+        }
+
+        .quienes__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            width: 50%;
+            height: auto;
+
+            img {
+                width: 350px;
+                height: auto;
+                border: 5px solid grey;
+            }
+        }
+    }
+}
